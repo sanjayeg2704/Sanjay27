@@ -399,7 +399,7 @@ giftBtn.addEventListener("click", async () => {
     }
 
     giftMessage.innerHTML = `
-        <img id="giftImage" src="assets/placeholder.jpg" alt="Birthday surprise" />
+        <img id="giftImage" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="Birthday surprise" />
         <p style="margin:18px auto 0; color:#fff8d6; font-size:22px; font-weight:600; text-align:center; line-height:1.6; letter-spacing:0.5px; text-shadow:0 2px 10px rgba(0,0,0,0.35);">
             Once again Happy birthday Thangachi
         </p>
@@ -414,6 +414,8 @@ giftBtn.addEventListener("click", async () => {
             giftImage.src = "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80";
         };
     }
+
+    giftMessage.classList.add("show");
 
     document.getElementById("giftSVG").classList.add("hideGift");
     const btn = document.getElementById("giftBtn");
