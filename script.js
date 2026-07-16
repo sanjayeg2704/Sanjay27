@@ -209,7 +209,13 @@ blowBtn.addEventListener("click", () => {
 document.getElementById("memory").scrollIntoView({
     behavior: "smooth"
 });
+  setTimeout(() => {
+        if (!surpriseContent) return;
 
+        surpriseContent.hidden = false;
+        requestAnimationFrame(() => surpriseContent.classList.add("is-visible"));
+        surpriseContent.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 1200);
    
 
     // Celebration
