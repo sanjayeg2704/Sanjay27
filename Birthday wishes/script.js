@@ -405,7 +405,16 @@ giftBtn.addEventListener("click", async () => {
         </p>
     `;
 
-    giftMessage.classList.add("show");
+    const giftImage = document.getElementById("giftImage");
+    if (giftImage) {
+        giftImage.onload = () => {
+            giftMessage.classList.add("show");
+        };
+        giftImage.onerror = () => {
+            giftImage.src = "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80";
+        };
+    }
+
     document.getElementById("giftSVG").classList.add("hideGift");
     const btn = document.getElementById("giftBtn");
     if(btn){
