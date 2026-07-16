@@ -2200,6 +2200,32 @@ font-size:18px;
     transform:translateY(12px) scale(.95);
     pointer-events:none;
 }
+.memory-section{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.memory-photo{
+    width:350px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:0.4s;
+}
+
+.memory-photo:hover{
+    transform:scale(1.03);
+}
+
+.memory-text{
+    margin-top:20px;
+    font-size:20px;
+    color:#fff;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.8;
+}
 
 /* ==========================================================
 END
