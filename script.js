@@ -204,6 +204,11 @@ blowBtn.addEventListener("click", () => {
         birthdayCake.classList.add("glow");
 
     }, 900);
+    document.getElementById("memory").style.display = "block";
+
+document.getElementById("memory").scrollIntoView({
+    behavior: "smooth"
+});
 
     // Reveal the photo and birthday note after the candles go out.
     setTimeout(() => {
