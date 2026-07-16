@@ -2201,6 +2201,7 @@ font-size:18px;
     pointer-events:none;
 }
 .memory-section{
+   display:none;
     text-align:center;
     padding:60px 20px;
 }
