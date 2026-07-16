@@ -210,14 +210,7 @@ document.getElementById("memory").scrollIntoView({
     behavior: "smooth"
 });
 
-    // Reveal the photo and birthday note after the candles go out.
-    setTimeout(() => {
-        if (!surpriseContent) return;
-
-        surpriseContent.hidden = false;
-        requestAnimationFrame(() => surpriseContent.classList.add("is-visible"));
-        surpriseContent.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 1200);
+   
 
     // Celebration
     setTimeout(() => {
