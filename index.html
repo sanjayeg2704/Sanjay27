@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+LOADER
+=========================== -->
+
+<div id="loader">
+
+<div class="loaderContent">
+
+<div class="loaderCircle"></div>
+
+<h2>
+
+Preparing Your Surprise...
+
+</h2>
+
+</div>
+
+</div>
+
+<!-- ===========================
+BACKGROUND
+=========================== -->
+
+<div class="background">
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+<div class="balloon balloon4"></div>
+<div class="balloon balloon5"></div>
+
+<div class="aurora"></div>
+
+<div class="moon"></div>
+
+<div class="stars"></div>
+
+<div class="shootingStars"></div>
+
+<div class="fireflies"></div>
+
+<div class="floatingGlow"></div>
+
+</div>
+
+<!-- ===========================
+WELCOME
+=========================== -->
+
+<section id="welcome">
+
+<div class="glass welcomeCard">
+
+<p class="smallText">
+
+Someone Special Has A Birthday Today
+
+</p>
+
+<h1>
+
+Happy Birthday
+
+</h1>
+
+<h2>
+
+My Special One ❤️
+
+</h2>
+
+<p class="description">
+
+Today is not just another day.
+
+It is a celebration of your beautiful life and the joy you bring to everyone around you.
+
+</p>
+
+<button id="startBtn">
+
+Open Surprise
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===========================
+MAIN
+=========================== -->
+
+<main id="mainContent">
+
+<!-- ===========================
+TITLE
+=========================== -->
+
+<section class="heroTitle">
+
+<h1 class="mainTitle">
+
+Happy Birthday
+
+</h1>
+
+<h2 class="name">
+
+Thangapulla..!
+
+</h2>
+
+</section>
+
+<!-- ===========================
+LETTER
+=========================== -->
+
+<section class="glass letterCard">
+
+<h2>
+
+💌 A Letter For You
+
+</h2>
+
+<p id="typeText">
+
+</p>
+
+</section>
+
+<!-- ===========================
+WISHES
+=========================== -->
+
+<section class="wishGrid"></section>
+<!-- ===========================
+CAKE
+=========================== -->
+
+<section class="cakeSection">
+
+<h2 class="sectionTitle">
+
+🎂 Make A Birthday Wish
+
+</h2>
+
+<div class="cakeContainer">
+
+<svg id="birthdayCake" viewBox="0 0 450 520" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="plateGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#d9d9d9"/>
+      <stop offset="100%" stop-color="#9f9f9f"/>
+    </linearGradient>
+
+    <linearGradient id="cakeBottomGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d39a5c"/>
+      <stop offset="100%" stop-color="#8a5427"/>
+    </linearGradient>
+
+    <linearGradient id="cakeMiddleGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5b77b"/>
+      <stop offset="100%" stop-color="#b16a30"/>
+    </linearGradient>
+
+    <linearGradient id="cakeTopGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1cf9a"/>
+      <stop offset="100%" stop-color="#ca8445"/>
+    </linearGradient>
+
+    <radialGradient id="flameGradient">
+      <stop offset="0%" stop-color="#ffffcc"/>
+      <stop offset="40%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ff7b00"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- Plate -->
+  <ellipse
+      cx="225"
+      cy="470"
+      rx="175"
+      ry="20"
+      fill="url(#plateGradient)"/>
+
+  <!-- Plate Shadow -->
+  <ellipse
+      cx="225"
+      cy="478"
+      rx="145"
+      ry="10"
+      fill="#8c8c8c"
+      opacity=".25"/>
+
+  <!-- Bottom Cake -->
+  <rect
+      x="85"
+      y="285"
+      width="280"
+      height="90"
+      rx="16"
+      fill="url(#cakeBottomGradient)"/>
+  <path d="M95 310 Q225 275 345 310 L345 355 Q225 390 95 355 Z" fill="#7d421f" opacity="0.24"/>
+
+  <!-- Cream -->
+  <rect
+      x="85"
+      y="270"
+      width="280"
+      height="18"
+      rx="10"
+      fill="#ffffff"/>
+  <path d="M95 284 C145 268 255 268 345 284" stroke="#f7d9c4" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Middle Cake -->
+  <rect
+      x="120"
+      y="205"
+      width="210"
+      height="70"
+      rx="14"
+      fill="url(#cakeMiddleGradient)"/>
+  <path d="M130 245 Q225 220 310 245" stroke="#8f4e22" stroke-width="4" fill="none" opacity="0.25"/>
+
+  <!-- Cream -->
+  <rect
+      x="120"
+      y="192"
+      width="210"
+      height="16"
+      rx="10"
+      fill="#ffffff"/>
+  <path d="M125 202 C165 188 245 188 305 202" stroke="#f7d9c4" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Top Cake -->
+  <rect
+      x="155"
+      y="135"
+      width="140"
+      height="58"
+      rx="12"
+      fill="url(#cakeTopGradient)"/>
+  <path d="M165 165 Q225 142 285 165" stroke="#8f4e22" stroke-width="3" fill="none" opacity="0.22"/>
+
+  <!-- Top Cream -->
+  <rect
+      x="155"
+      y="122"
+      width="140"
+      height="16"
+      rx="10"
+      fill="#ffffff"/>
+  <path d="M160 132 C190 123 260 123 290 132" stroke="#f7d9c4" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Chocolate Drip -->
+  <path
+      fill="#4d2a13"
+      d="
+      M155 137
+      C165 155 178 150 185 137
+      C193 160 207 150 215 137
+      C223 157 238 150 245 137
+      C253 160 267 150 275 137
+      C282 155 292 150 295 137
+      L295 122
+      L155 122
+      Z"/>
+
+  <!-- Cream Swirls -->
+  <circle cx="170" cy="120" r="7" fill="#ffffff"/>
+  <circle cx="200" cy="115" r="8" fill="#ffffff"/>
+  <circle cx="225" cy="120" r="7" fill="#ffffff"/>
+  <circle cx="250" cy="115" r="8" fill="#ffffff"/>
+  <circle cx="280" cy="120" r="7" fill="#ffffff"/>
+
+  <!-- Cherries -->
+  <circle cx="170" cy="106" r="5" fill="#d61b1b"/>
+  <circle cx="225" cy="101" r="5" fill="#d61b1b"/>
+  <circle cx="280" cy="106" r="5" fill="#d61b1b"/>
+
+  <!-- Candles -->
+  <rect x="174" y="62" width="12" height="60" rx="2.5" fill="#fffdf8"/>
+  <rect x="219" y="62" width="12" height="60" rx="2.5" fill="#fffdf8"/>
+  <rect x="264" y="62" width="12" height="60" rx="2.5" fill="#fffdf8"/>
+  <rect x="172" y="56" width="16" height="8" rx="3" fill="#f1c7c7"/>
+  <rect x="217" y="56" width="16" height="8" rx="3" fill="#f1c7c7"/>
+  <rect x="262" y="56" width="16" height="8" rx="3" fill="#f1c7c7"/>
+
+  <!-- Candle Stripes -->
+  <g stroke="#ff7070" stroke-width="2" stroke-linecap="round">
+    <line x1="176" y1="76" x2="184" y2="76"/>
+    <line x1="176" y1="90" x2="184" y2="90"/>
+    <line x1="176" y1="104" x2="184" y2="104"/>
+
+    <line x1="221" y1="76" x2="229" y2="76"/>
+    <line x1="221" y1="90" x2="229" y2="90"/>
+    <line x1="221" y1="104" x2="229" y2="104"/>
+
+    <line x1="266" y1="76" x2="274" y2="76"/>
+    <line x1="266" y1="90" x2="274" y2="90"/>
+    <line x1="266" y1="104" x2="274" y2="104"/>
+  </g>
+
+  <!-- Flames -->
+  <path id="flame1" class="flame"
+        d="M180 48 C172 58 173 70 180 76 C187 70 188 58 180 48 Z"
+        fill="url(#flameGradient)"/>
+
+  <path id="flame2" class="flame"
+        d="M225 48 C217 58 218 70 225 76 C232 70 233 58 225 48 Z"
+        fill="url(#flameGradient)"/>
+
+  <path id="flame3" class="flame"
+        d="M270 48 C262 58 263 70 270 76 C277 70 278 58 270 48 Z"
+        fill="url(#flameGradient)"/>
+
+  <!-- Smoke -->
+  <g id="smoke1" class="smoke">
+    <circle cx="180" cy="68" r="5"/>
+    <circle cx="184" cy="63" r="4"/>
+    <circle cx="177" cy="58" r="3"/>
+  </g>
+
+  <g id="smoke2" class="smoke">
+    <circle cx="225" cy="68" r="5"/>
+    <circle cx="229" cy="63" r="4"/>
+    <circle cx="222" cy="58" r="3"/>
+  </g>
+
+  <g id="smoke3" class="smoke">
+    <circle cx="270" cy="68" r="5"/>
+    <circle cx="274" cy="63" r="4"/>
+    <circle cx="267" cy="58" r="3"/>
+  </g>
+
+</svg>
+
+<button id="blowBtn">
+
+🕯️ Blow Candles
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+FINAL MESSAGE
+=========================== -->
+<!-- Final message removed per user request -->
+
+<!-- ===========================
+GIFT SECTION
+=========================== -->
+
+<section class="giftSection">
+
+<h2 class="sectionTitle">
+
+🎁 A Small Memories 
+
+</h2>
+
+<svg id="giftSVG"
+     viewBox="0 0 450 450"
+     xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="giftBodyGradient" x1="0" y1="0" x2="0" y2="1">
+
+<stop offset="0%" stop-color="#1CE69B"/>
+
+<stop offset="100%" stop-color="#0D8A58"/>
+
+</linearGradient>
+
+<linearGradient id="goldGradient" x1="0" y1="0" x2="0" y2="1">
+
+<stop offset="0%" stop-color="#FFE082"/>
+
+<stop offset="100%" stop-color="#FFC107"/>
+
+</linearGradient>
+
+</defs>
+
+<!-- Shadow -->
+
+<ellipse
+
+cx="225"
+
+cy="370"
+
+rx="120"
+
+ry="18"
+
+fill="#000"
+
+opacity=".18"/>
+
+<!-- Box -->
+
+<rect
+
+x="110"
+
+y="160"
+
+width="230"
+
+height="170"
+
+rx="14"
+
+class="giftBody"
+
+fill="url(#giftBodyGradient)"/>
+
+<!-- Lid -->
+
+<g id="giftLid">
+
+<rect
+
+x="95"
+
+y="120"
+
+width="260"
+
+height="55"
+
+rx="12"
+
+fill="url(#giftBodyGradient)"/>
+
+</g>
+
+<!-- Vertical Ribbon -->
+
+<rect
+
+x="214"
+
+y="120"
+
+width="22"
+
+height="210"
+
+fill="url(#goldGradient)"/>
+
+<!-- Horizontal Ribbon -->
+
+<rect
+
+x="110"
+
+y="225"
+
+width="230"
+
+height="22"
+
+fill="url(#goldGradient)"/>
+
+<!-- Bow -->
+
+<ellipse
+
+cx="205"
+
+cy="110"
+
+rx="28"
+
+ry="16"
+
+fill="url(#goldGradient)"/>
+
+<ellipse
+
+cx="245"
+
+cy="110"
+
+rx="28"
+
+ry="16"
+
+fill="url(#goldGradient)"/>
+
+<circle
+
+cx="225"
+
+cy="110"
+
+r="10"
+
+fill="#FFB300"/>
+
+</svg>
+
+<button id="giftBtn" disabled>
+
+Open Gift
+
+</button>
+
+<div id="giftMessage" class="giftImageContainer">
+    <img id="giftImage" src="assets/placeholder.jpg" alt="Birthday surprise" />
+</div>
+
+</section>
+
+</main>
+
+<!-- ===========================
+FIREWORK CANVAS
+=========================== -->
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- ===========================
+SCROLL TO TOP
+=========================== -->
+
+<button id="topBtn">
+
+↑
+
+</button>
+
+<!-- ===========================
+LIBRARIES
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+<!-- ===========================
+BIRTHDAY MUSIC
+=========================== -->
+
+<audio id="birthdayMusic" preload="auto" loop>
+  <source src="https://videotourl.com/audio/1784216309577-ca80bc8d-2174-4b52-a355-c037017e1002.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===========================
+SCRIPT
+=========================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
